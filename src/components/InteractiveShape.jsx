@@ -16,7 +16,7 @@ export const InteractiveShape = () => {
   useEffect(() => {
     if (queue.current.length === 9) {
       queue.current.forEach(([rowIdx, colIdx], idx) => 
-        
+        setTimeOut(() => handleOnClick((rowIdx, colIdx))
     );
     }
   }, [grid]);
